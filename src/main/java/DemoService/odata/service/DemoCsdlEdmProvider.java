@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
 import org.apache.olingo.commons.api.edm.EdmPrimitiveTypeKind;
 import org.apache.olingo.commons.api.edm.FullQualifiedName;
 import org.apache.olingo.commons.api.edm.provider.CsdlAbstractEdmProvider;
@@ -20,6 +21,8 @@ import org.apache.olingo.commons.api.ex.ODataException;
 public class DemoCsdlEdmProvider extends CsdlAbstractEdmProvider {
 	// Service Namespace
 	public static final String NAMESPACE = "OData.Demo";
+	
+	public com.sap.cloud.sdk.service.prov.v4.rt.core.web.ODataServlet oServlet = null;
 
 	// EDM Container
 	public static final String CONTAINER_NAME = "Container";
